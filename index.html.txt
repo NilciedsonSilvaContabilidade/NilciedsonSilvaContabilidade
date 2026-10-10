@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilciedson Silva Contabilidade | Soluções Contábeis e Consultoria</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #0b2545;
+      --secondary-color: #134074;
+      --accent-color: #c59b27;
+      --bg-light: #f8f9fa;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #333;
+    }
+
+    .bg-primary-custom {
+      background-color: var(--primary-color) !important;
+    }
+
+    .bg-secondary-custom {
+      background-color: var(--secondary-color) !important;
+    }
+
+    .text-accent {
+      color: var(--accent-color) !important;
+    }
+
+    .btn-accent {
+      background-color: var(--accent-color);
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-accent:hover {
+      background-color: #b0881e;
+      color: #fff;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, rgba(11, 37, 69, 0.95), rgba(19, 64, 116, 0.9)), 
+                  url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      padding: 100px 0 80px;
+      color: #fff;
+    }
+
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      background-color: rgba(19, 64, 116, 0.1);
+      color: var(--secondary-color);
+    }
+
+    .card-service {
+      border: 1px solid #e9ecef;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #128c7e;
+      color: white;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Contact Bar -->
+  <div class="bg-primary-custom text-white py-2 d-none d-md-block text-size-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <small class="me-3"><i class="bi bi-geo-alt text-accent me-1"></i> São Francisco do Oeste / RN</small>
+        <small class="me-3"><i class="bi bi-award text-accent me-1"></i> CRC: RN-001278/O</small>
+      </div>
+      <div>
+        <small class="me-3"><i class="bi bi-telephone text-accent me-1"></i> (84) 99818-0209</small>
+        <small><i class="bi bi-envelope text-accent me-1"></i> gleyson@tmaenergiasolar.com</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary-custom sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+        <i class="bi bi-journal-bookmark-fill text-accent fs-3 me-2"></i>
+        <span>Nilciedson Silva <span class="text-accent">Contabilidade</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-ul navbar-nav ms-auto text-center py-2 py-lg-0">
+          <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre Nós</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+        </ul>
+        <a href="https://wa.me/5584998180209" target="_blank" class="btn btn-accent ms-lg-3 px-4 py-2">
+          <i class="bi bi-whatsapp me-2"></i>Fale Conosco
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7">
+          <span class="badge bg-warning text-dark px-3 py-2 mb-3 fw-semibold">
+            <i class="bi bi-shield-check me-1"></i> Empresa Optante do Simples Nacional
+          </span>
+          <h1 class="display-4 fw-bold mb-3">Gestão contábil e estratégica para transformar o seu negócio.</h1>
+          <p class="lead text-light mb-4 opacity-90">
+            Oferecemos suporte completo em assessoria contábil, tributária, consultoria empresarial e apoio administrativo com a máxima precisão e transparência.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="https://wa.me/5584998180209" target="_blank" class="btn btn-accent btn-lg px-4">
+              <i class="bi bi-whatsapp me-2"></i>Atendimento Rápido
+            </a>
+            <a href="#servicos" class="btn btn-outline-light btn-lg px-4">Conhecer Serviços</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="bg-white text-dark p-4 rounded-4 shadow-lg border-start border-4 border-warning">
+            <h4 class="fw-bold mb-3 text-primary-custom"><i class="bi bi-check-circle-fill text-accent me-2"></i>Por que nos escolher?</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3 d-flex align-items-start">
+                <i class="bi bi-patch-check text-primary-custom fs-5 me-2"></i>
+                <span><strong>Registro Profissional:</strong> Registro CRC/RN garantindo conformidade e ética.</span>
+              </li>
+              <li class="mb-3 d-flex align-items-start">
+                <i class="bi bi-patch-check text-primary-custom fs-5 me-2"></i>
+                <span><strong>Visão Consultiva:</strong> Muito além dos impostos — focamos no seu crescimento.</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <i class="bi bi-patch-check text-primary-custom fs-5 me-2"></i>
+                <span><strong>Agilidade no Atendimento:</strong> Comunicação rápida e direta para solucionar demandas.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="text-center max-width-700 mx-auto mb-5">
+        <h6 class="text-accent fw-bold text-uppercase tracking-wider">O que fazemos</h6>
+        <h2 class="fw-bold text-primary-custom">Nossas Soluções Contábeis e Empresariais</h2>
+        <p class="text-muted">Serviços especializados para assegurar a regularidade fiscal, operacional e financeira da sua empresa.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Serviço 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-service h-100 p-4 rounded-4 bg-white border-0 shadow-sm">
+            <div class="feature-icon mb-3">
+              <i class="bi bi-calculator-fill"></i>
+            </div>
+            <h4 class="fw-bold fs-5">Atividades de Contabilidade</h4>
+            <p class="text-muted small">Escrituração contábil, balanços, demonstrações financeiras e apuração fiscal completa para sua empresa mantendo-se sempre em dia.</p>
+          </div>
+        </div>
+
+        <!-- Serviço 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-service h-100 p-4 rounded-4 bg-white border-0 shadow-sm">
+            <div class="feature-icon mb-3">
+              <i class="bi bi-pie-chart-fill"></i>
+            </div>
+            <h4 class="fw-bold fs-5">Consultoria e Auditoria Tributária</h4>
+            <p class="text-muted small">Planejamento tributário estratégico para otimização de impostos, revisão fiscal e diagnósticos em compliance.</p>
+          </div>
+        </div>
+
+        <!-- Serviço 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-service h-100 p-4 rounded-4 bg-white border-0 shadow-sm">
+            <div class="feature-icon mb-3">
+              <i class="bi bi-briefcase-fill"></i>
+            </div>
+            <h4 class="fw-bold fs-5">Consultoria em Gestão Empresarial</h4>
+            <p class="text-muted small">Orientação para tomada de decisões inteligentes, organização de rotinas operacionais e ganho de eficiência no negócio.</p>
+          </div>
+        </div>
+
+        <!-- Serviço 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-service h-100 p-4 rounded-4 bg-white border-0 shadow-sm">
+            <div class="feature-icon mb-3">
+              <i class="bi bi-person-video3"></i>
+            </div>
+            <h4 class="fw-bold fs-5">Treinamento Profissional e Gerencial</h4>
+            <p class="text-muted small">Capacitação para gestores e colaboradores focando em evolução administrativa, organização financeira e rotinas internas.</p>
+          </div>
+        </div>
+
+        <!-- Serviço 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-service h-100 p-4 rounded-4 bg-white border-0 shadow-sm">
+            <div class="feature-icon mb-3">
+              <i class="bi bi-folder-symlink-fill"></i>
+            </div>
+            <h4 class="fw-bold fs-5">Apoio Administrativo Combinado</h4>
+            <p class="text-muted small">Terceirização de rotinas de escritório, controle de documentos e gestão de processos do cotidiano corporativo.</p>
+          </div>
+        </div>
+
+        <!-- Serviço 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-service h-100 p-4 rounded-4 bg-white border-0 shadow-sm">
+            <div class="feature-icon mb-3">
+              <i class="bi bi-file-earmark-text-fill"></i>
+            </div>
+            <h4 class="fw-bold fs-5">Preparação de Documentos</h4>
+            <p class="text-muted small">Elaboração, organização e acompanhamento de documentações fiscais e administrativas especializadas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section id="sobre" class="py-5">
+    <div class="container py-4">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <h6 class="text-accent fw-bold text-uppercase">Sobre a Empresa</h6>
+          <h2 class="fw-bold text-primary-custom mb-3">Compromisso com o Sucesso do Seu Negócio</h2>
+          <p class="text-muted">
+            A <strong>Nilciedson Silva Contabilidade LTDA</strong> foi constituída com o objetivo de entregar assessoria contábil moderna, precisa e descomplicada. Sob a liderança de <strong>Jose Nilciedson da Silva</strong> (Sócio-Administrador), atuamos com foco em estratégias de crescimento e segurança jurídica para micro e pequenas empresas.
+          </p>
+          
+          <div class="row g-3 mt-2">
+            <div class="col-6">
+              <div class="p-3 bg-light rounded-3 border-start border-3 border-primary">
+                <small class="text-muted d-block">Razão Social</small>
+                <strong class="text-dark small">Nilciedson Silva Contabilidade LTDA</strong>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 bg-light rounded-3 border-start border-3 border-primary">
+                <small class="text-muted d-block">Registro Profissional</small>
+                <strong class="text-dark small">CRC: RN-001278/O</strong>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 bg-light rounded-3 border-start border-3 border-primary">
+                <small class="text-muted d-block">Regime Tributário</small>
+                <strong class="text-dark small">Simples Nacional</strong>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 bg-light rounded-3 border-start border-3 border-primary">
+                <small class="text-muted d-block">CNPJ</small>
+                <strong class="text-dark small">66.252.045/0001-61</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="bg-primary-custom text-white p-5 rounded-4 shadow-lg">
+            <h3 class="fw-bold mb-4 text-accent"><i class="bi bi-building-check me-2"></i>Ficha Institucional</h3>
+            <div class="d-flex justify-content-between border-bottom border-secondary py-2">
+              <span class="opacity-75">Sócio-Administrador:</span>
+              <span class="fw-semibold">Jose Nilciedson da Silva</span>
+            </div>
+            <div class="d-flex justify-content-between border-bottom border-secondary py-2">
+              <span class="opacity-75">Porte Empresarial:</span>
+              <span class="fw-semibold">Micro Empresa (ME)</span>
+            </div>
+            <div class="d-flex justify-content-between border-bottom border-secondary py-2">
+              <span class="opacity-75">Natureza Jurídica:</span>
+              <span class="fw-semibold">Sociedade Empresária LTDA</span>
+            </div>
+            <div class="d-flex justify-content-between border-bottom border-secondary py-2">
+              <span class="opacity-75">Situação Cadastral:</span>
+              <span class="badge bg-success">Ativa</span>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <span class="opacity-75">CNAE Principal:</span>
+              <span class="fw-semibold">69.20-6-01 (Contabilidade)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato e Localização -->
+  <section id="contato" class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="text-center max-width-700 mx-auto mb-5">
+        <h6 class="text-accent fw-bold text-uppercase">Fale Conosco</h6>
+        <h2 class="fw-bold text-primary-custom">Estamos Prontos para Atender Você</h2>
+        <p class="text-muted">Entre em contato para agendar uma reunião ou tirar dúvidas sobre nossos serviços.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Informações de Contato -->
+        <div class="col-lg-5">
+          <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+            <h4 class="fw-bold text-primary-custom mb-4">Informações de Contato</h4>
+
+            <div class="d-flex align-items-start mb-4">
+              <div class="feature-icon me-3">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Endereço</h6>
+                <p class="text-muted mb-0 small">
+                  Rua Djalma de Freitas Nobre, 04, Sala 01<br>
+                  Bairro Ceará — CEP: 59908-000<br>
+                  São Francisco do Oeste / RN
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start mb-4">
+              <div class="feature-icon me-3">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Telefone / WhatsApp</h6>
+                <p class="text-muted mb-0 small">(84) 99818-0209</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start mb-4">
+              <div class="feature-icon me-3">
+                <i class="bi bi-envelope-open-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">E-mail Comercial</h6>
+                <p class="text-muted mb-0 small">gleyson@tmaenergiasolar.com</p>
+              </div>
+            </div>
+
+            <a href="https://maps.google.com/?q=Rua+Djalma+de+Freitas+Nobre+04+Ceara+Sao+Francisco+do+Oeste+RN" 
+               target="_blank" class="btn btn-outline-primary w-100 mt-2">
+              <i class="bi bi-map-fill me-2"></i>Ver no Google Maps
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulário de Mensagem -->
+        <div class="col-lg-7">
+          <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+            <h4 class="fw-bold text-primary-custom mb-4">Envie uma Mensagem</h4>
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label small fw-semibold">Nome Completo</label>
+                  <input type="text" class="form-control" placeholder="Seu nome" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-semibold">Telefone / WhatsApp</label>
+                  <input type="tel" class="form-control" placeholder="(00) 00000-0000" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-semibold">E-mail</label>
+                  <input type="email" class="form-control" placeholder="seu@email.com" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-semibold">Assunto do Interesse</label>
+                  <select class="form-select">
+                    <option selected>Selecione um serviço</option>
+                    <option>Atividades de Contabilidade</option>
+                    <option>Consultoria Tributária</option>
+                    <option>Consultoria em Gestão Empresarial</option>
+                    <option>Treinamento Profissional</option>
+                    <option>Apoio Administrativo</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-semibold">Mensagem</label>
+                  <textarea class="form-control" rows="4" placeholder="Como podemos ajudar sua empresa?" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-accent w-100 py-2 fw-bold">
+                    <i class="bi bi-send-fill me-2"></i>Enviar Mensagem
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-primary-custom text-white py-4 border-top border-secondary">
+    <div class="container text-center text-md-start">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-6">
+          <h5 class="fw-bold text-accent mb-1">Nilciedson Silva Contabilidade LTDA</h5>
+          <p class="small text-white-50 mb-0">CNPJ: 66.252.045/0001-61 | CRC: RN-001278/O</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="small text-white-50 mb-0">&copy; Todos os direitos reservados. São Francisco do Oeste / RN.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="https://wa.me/5584998180209" class="whatsapp-float" target="_blank" title="Fale conosco pelo WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
